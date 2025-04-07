@@ -6,7 +6,8 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  # project: default
+  project: my-demo
   source:
     repoURL: https://charts.jetstack.io
     chart: cert-manager
@@ -17,7 +18,8 @@ spec:
           value: 'true'
   destination:
     namespace: cert-manager
-    name: kind
+    # name: kind
+    name: in-cluster
   syncPolicy:
     automated: {}
     syncOptions:
