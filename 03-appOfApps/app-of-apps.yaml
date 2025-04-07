@@ -10,7 +10,7 @@ spec:
     # path: apps
     path: 03-appOfApps/apps
     # repoURL: 'https://github.com/morey-tech/argo-cd-app-of-apps-demo'
-    repoURL: https://github.com/github2020-g/argocd-tutorial.git'
+    repoURL: 'https://github.com/github2020-g/argocd-tutorial.git'
     targetRevision: HEAD
   project: default
   # syncPolicy:
