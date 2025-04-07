@@ -8,8 +8,10 @@ metadata:
 spec:
   destination:
     namespace: guestbook
-    name: kind
-  project: default
+    # name: kind
+    name: in-cluster
+  # project: default
+  project: my-demo
   source:
     path: general/helm-guestbook
     repoURL: https://github.com/morey-tech/argocd-example-apps
