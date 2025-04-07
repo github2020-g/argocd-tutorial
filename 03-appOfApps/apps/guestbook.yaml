@@ -6,16 +6,16 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  destination:
-    namespace: guestbook
-    # name: kind
-    name: in-cluster
   # project: default
   project: my-demo
   source:
     path: general/helm-guestbook
     repoURL: https://github.com/morey-tech/argocd-example-apps
     targetRevision: HEAD
+  destination:
+    namespace: guestbook
+    # name: kind
+    name: in-cluster
   syncPolicy:
     automated:
       prune: true
