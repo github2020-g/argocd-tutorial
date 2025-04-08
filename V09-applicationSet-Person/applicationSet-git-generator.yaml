@@ -9,7 +9,7 @@ spec:
       repoURL: https://github.com/github2020-g/argocd-tutorial.git
       revision: main
       directories:
-      - path: V09-applicationSet-Person/*
+      - path: V09-applicationSet-Person/helmChart/*
   template:
     metadata:
       name: '{{path.basename}}-application'
